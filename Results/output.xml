@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190624 22:33:27.929" generator="Robot 3.1.2 (Python 2.7.13 on win32)">
+<suite source="D:\Python\Zerodha_Analysis\Tests\Login.robot" id="s1" name="Login">
+<test id="s1-t1" name="Login to Zerodha">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser_type}</arg>
+</arguments>
+<msg timestamp="20190624 22:33:28.975" level="INFO">Opening browser 'Firefox' to base url 'https://kite.zerodha.com/'.</msg>
+<status status="PASS" endtime="20190624 22:33:42.133" starttime="20190624 22:33:28.974"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Login to Kite</arg>
+</arguments>
+<status status="PASS" endtime="20190624 22:33:42.198" starttime="20190624 22:33:42.140"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${zr_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190624 22:33:42.199" level="INFO">Typing text 'YS9974' into text field '//input[contains(@type,'text')]'.</msg>
+<status status="PASS" endtime="20190624 22:33:42.242" starttime="20190624 22:33:42.198"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${zr_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190624 22:33:42.243" level="INFO">Typing text 'Kjm@2018' into text field '//input[contains(@type,'password')]'.</msg>
+<status status="PASS" endtime="20190624 22:33:42.301" starttime="20190624 22:33:42.243"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${zr_submit}</arg>
+</arguments>
+<msg timestamp="20190624 22:33:42.304" level="INFO">Clicking button '//button[@type='submit'][contains(.,'Login')]'.</msg>
+<status status="PASS" endtime="20190624 22:33:42.634" starttime="20190624 22:33:42.304"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>PIN</arg>
+</arguments>
+<status status="PASS" endtime="20190624 22:33:42.651" starttime="20190624 22:33:42.637"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${zr_pin}</arg>
+<arg>${pin}</arg>
+</arguments>
+<msg timestamp="20190624 22:33:42.652" level="INFO">Typing text '1216161' into text field '//input[contains(@type,'password')]'.</msg>
+<status status="PASS" endtime="20190624 22:33:42.678" starttime="20190624 22:33:42.652"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${zr_pin_continue}</arg>
+</arguments>
+<msg timestamp="20190624 22:33:42.679" level="INFO">Clicking button '//button[contains(@type,'submit')]'.</msg>
+<status status="PASS" endtime="20190624 22:33:44.968" starttime="20190624 22:33:42.679"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${name}</arg>
+</arguments>
+<status status="PASS" endtime="20190624 22:33:44.982" starttime="20190624 22:33:44.970"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Hi, ${name}</arg>
+</arguments>
+<msg timestamp="20190624 22:33:45.004" level="INFO">Current page contains text 'Hi, Abhishek'.</msg>
+<status status="PASS" endtime="20190624 22:33:45.004" starttime="20190624 22:33:44.983"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Holdings</arg>
+</arguments>
+<msg timestamp="20190624 22:33:45.007" level="INFO">Clicking link 'Holdings'.</msg>
+<status status="PASS" endtime="20190624 22:33:45.653" starttime="20190624 22:33:45.006"></status>
+</kw>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${holdings_dir}</arg>
+</arguments>
+<status status="PASS" endtime="20190624 22:33:45.679" starttime="20190624 22:33:45.678"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>${holdings_dir}/holdings.png</arg>
+</arguments>
+<msg timestamp="20190624 22:33:45.914" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Holdings_Screenshot/Holdings_Screenshot/holdings.png"&gt;&lt;img src="../Holdings_Screenshot/Holdings_Screenshot/holdings.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190624 22:33:45.915" starttime="20190624 22:33:45.680"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20190624 22:33:50.919" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190624 22:33:50.919" starttime="20190624 22:33:45.916"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190624 22:33:56.420" starttime="20190624 22:33:50.921"></status>
+</kw>
+<doc>This test case will login to Zerodha successfuly</doc>
+<tags>
+<tag>Login</tag>
+</tags>
+<status status="PASS" endtime="20190624 22:33:56.420" critical="yes" starttime="20190624 22:33:28.973"></status>
+</test>
+<status status="PASS" endtime="20190624 22:33:56.426" starttime="20190624 22:33:27.934"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Login</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Login" pass="1">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

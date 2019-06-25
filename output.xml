@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190609 10:48:46.104" generator="Robot 3.1.2 (Python 2.7.13 on win32)">
+<suite source="D:\Python\Zerodha_Analysis\Tests\Login.robot" id="s1" name="Login">
+<test id="s1-t1" name="Login to Zerodha">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://kite.zerodha.com/</arg>
+<arg>Firefox</arg>
+</arguments>
+<msg timestamp="20190609 10:48:46.859" level="INFO">Opening browser 'Firefox' to base url 'https://kite.zerodha.com/'.</msg>
+<status status="PASS" endtime="20190609 10:48:54.922" starttime="20190609 10:48:46.859"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Login to Kite</arg>
+</arguments>
+<status status="PASS" endtime="20190609 10:48:54.955" starttime="20190609 10:48:54.923"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190609 10:48:57.955" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20190609 10:48:57.955" starttime="20190609 10:48:54.955"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190609 10:49:00.784" starttime="20190609 10:48:57.956"></status>
+</kw>
+<doc>This test case will login to Zerodha successfuly</doc>
+<tags>
+<tag>Login</tag>
+</tags>
+<status status="PASS" endtime="20190609 10:49:00.785" critical="yes" starttime="20190609 10:48:46.859"></status>
+</test>
+<doc>Results</doc>
+<status status="PASS" endtime="20190609 10:49:00.789" starttime="20190609 10:48:46.120"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Login</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Login" pass="1">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
