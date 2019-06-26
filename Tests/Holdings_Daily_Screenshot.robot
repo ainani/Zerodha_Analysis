@@ -4,6 +4,7 @@ Variables  ../ObjectRepository/LoginLocators.py
 Variables  ../Variables/LoginDetails.py
 Library  SeleniumLibrary
 
+
 *** Variables ***
 
 *** Test Cases ***
