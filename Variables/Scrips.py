@@ -1,0 +1,12 @@
+scrips = ['AMARAJABAT',
+          'DABUR',
+          'DMART',
+          'GODREJAGRO',
+          'HAVELLS',
+          'HEXAWARE',
+          'ITC',
+          'M&M',
+          'RBLBANK',
+          'RELIANCE',
+          'TITAN',
+          'YESBANK']
