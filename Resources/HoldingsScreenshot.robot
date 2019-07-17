@@ -1,16 +1,12 @@
 *** Settings ***
-#Resource  ../Resources/Common.robot
+Library           BuiltIn
+Library           SeleniumLibrary
 Variables  ../ObjectRepository/LoginLocators.py
 Variables  ../Variables/LoginDetails.py
-Library  SeleniumLibrary
 
+*** Keywords ***
 
-*** Variables ***
-
-*** Test Cases ***
 Login to Zerodha
-    [Documentation]  This test case will login to Zerodha successfuly
-    [Tags]  Login
     open browser  ${url}  ${browser_type}
     Wait until page contains  Login to Kite
     Input Text  ${zr_username}  ${username}
@@ -21,12 +17,13 @@ Login to Zerodha
     Click Button  ${zr_pin_continue}
     Wait Until Page Contains  ${name}
     Page Should Contain  Hi, ${name}
+
+Click on Holdings
     Click Link  Holdings
     Set Screenshot Directory  ${holdings_dir}
     Capture Page Screenshot  ${holdings_dir}/holdings.png
     sleep  5s
-    Close Browser
 
-
-
-*** Keywords ***
+Validate the scrips
+    ${text}  get text  //span[contains(.,'AMARAJABAT')]
+    should contain  ${text}  AMARAJABAT
