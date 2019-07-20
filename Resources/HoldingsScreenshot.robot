@@ -3,6 +3,7 @@ Library           BuiltIn
 Library           SeleniumLibrary
 Variables  ../ObjectRepository/LoginLocators.py
 Variables  ../Variables/LoginDetails.py
+Variables  ../Variables/Scrips.py
 
 *** Keywords ***
 
@@ -25,5 +26,5 @@ Click on Holdings
     sleep  5s
 
 Validate the scrips
-    ${text}  get text  //span[contains(.,'AMARAJABAT')]
+    ${text}  get text  //span[contains(.,'${scrips}[0]')]
     should contain  ${text}  AMARAJABAT
