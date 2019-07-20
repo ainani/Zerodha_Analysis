@@ -25,6 +25,19 @@ Click on Holdings
     Capture Page Screenshot  ${holdings_dir}/holdings.png
     sleep  5s
 
+#Validate the scrips
+    ${symbol}  get text  //tr[1]/td[1]/span[1]
+    #${text}  get text  //span[contains(.,'${scrips}[0]')]
+    ${qty}  get text  //tr[1]/td[2]
+    #${text1}  get text  //td[@class='right']//span
+    ${avg}  get text  //tr[1]/td[3]
+    ${ltp}  get text  //tr[1]/td[4]
+    #should contain  ${text}  AMARAJABAT
+
+
 Validate the scrips
-    ${text}  get text  //span[contains(.,'${scrips}[0]')]
-    should contain  ${text}  AMARAJABAT
+    :FOR  ${i}  IN RANGE  1  13
+    \   ${symbol}  get text  //tr[${i}]/td[1]/span[1]
+    \   ${qty}  get text  //tr[${i}]/td[2]
+    \   ${avg}  get text  //tr[${i}]/td[3]
+    \   ${ltp}  get text  //tr[${i}]/td[4]
