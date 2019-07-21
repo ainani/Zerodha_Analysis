@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190720 22:53:56.700" generator="Robot 3.1.2 (Python 2.7.13 on win32)">
-<suite source="D:\Python\Zerodha_Analysis\Tests\HoldingsScreenshot.robot" id="s1" name="HoldingsScreenshot">
-<test id="s1-t1" name="TC001 Validate login and save the Holdings screenshot">
-<kw name="Login to Zerodha" library="HoldingsScreenshot">
+<robot rpa="false" generated="20190721 09:28:56.859" generator="Robot 3.1.2 (Python 2.7.13 on win32)">
+<suite source="D:\Python\Zerodha_Analysis\Tests\BuyOrder.robot" id="s1" name="BuyOrder">
+<test id="s1-t1" name="TC001 Validate successful login">
+<kw name="Login to Zerodha" library="Login">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>${url}</arg>
 <arg>${browser_type}</arg>
 </arguments>
-<msg timestamp="20190720 22:53:57.546" level="INFO">Opening browser 'Firefox' to base url 'https://kite.zerodha.com/'.</msg>
-<status status="PASS" endtime="20190720 22:54:07.878" starttime="20190720 22:53:57.545"></status>
+<msg timestamp="20190721 09:28:57.751" level="INFO">Opening browser 'Firefox' to base url 'https://kite.zerodha.com/'.</msg>
+<status status="PASS" endtime="20190721 09:29:06.878" starttime="20190721 09:28:57.750"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>Login to Kite</arg>
 </arguments>
-<status status="PASS" endtime="20190720 22:54:07.924" starttime="20190720 22:54:07.879"></status>
+<status status="PASS" endtime="20190721 09:29:06.946" starttime="20190721 09:29:06.878"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -25,8 +25,8 @@
 <arg>${zr_username}</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190720 22:54:07.926" level="INFO">Typing text 'YS9974' into text field '//input[contains(@type,'text')]'.</msg>
-<status status="PASS" endtime="20190720 22:54:07.983" starttime="20190720 22:54:07.924"></status>
+<msg timestamp="20190721 09:29:06.946" level="INFO">Typing text 'YS9974' into text field '//input[contains(@type,'text')]'.</msg>
+<status status="PASS" endtime="20190721 09:29:06.993" starttime="20190721 09:29:06.946"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -34,23 +34,23 @@
 <arg>${zr_password}</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190720 22:54:07.984" level="INFO">Typing text 'Kjm@2018' into text field '//input[contains(@type,'password')]'.</msg>
-<status status="PASS" endtime="20190720 22:54:08.033" starttime="20190720 22:54:07.983"></status>
+<msg timestamp="20190721 09:29:06.994" level="INFO">Typing text 'Kjm@2018' into text field '//input[contains(@type,'password')]'.</msg>
+<status status="PASS" endtime="20190721 09:29:07.030" starttime="20190721 09:29:06.993"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${zr_submit}</arg>
 </arguments>
-<msg timestamp="20190720 22:54:08.033" level="INFO">Clicking button '//button[@type='submit'][contains(.,'Login')]'.</msg>
-<status status="PASS" endtime="20190720 22:54:08.317" starttime="20190720 22:54:08.033"></status>
+<msg timestamp="20190721 09:29:07.030" level="INFO">Clicking button '//button[@type='submit'][contains(.,'Login')]'.</msg>
+<status status="PASS" endtime="20190721 09:29:07.316" starttime="20190721 09:29:07.030"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>PIN</arg>
 </arguments>
-<status status="PASS" endtime="20190720 22:54:08.332" starttime="20190720 22:54:08.317"></status>
+<status status="PASS" endtime="20190721 09:29:07.347" starttime="20190721 09:29:07.316"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -58,121 +58,113 @@
 <arg>${zr_pin}</arg>
 <arg>${pin}</arg>
 </arguments>
-<msg timestamp="20190720 22:54:08.333" level="INFO">Typing text '121616' into text field '//input[contains(@type,'password')]'.</msg>
-<status status="PASS" endtime="20190720 22:54:08.365" starttime="20190720 22:54:08.333"></status>
+<msg timestamp="20190721 09:29:07.347" level="INFO">Typing text '121616' into text field '//input[contains(@type,'password')]'.</msg>
+<status status="PASS" endtime="20190721 09:29:07.362" starttime="20190721 09:29:07.347"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${zr_pin_continue}</arg>
 </arguments>
-<msg timestamp="20190720 22:54:08.366" level="INFO">Clicking button '//button[contains(@type,'submit')]'.</msg>
-<status status="PASS" endtime="20190720 22:54:10.606" starttime="20190720 22:54:08.366"></status>
+<msg timestamp="20190721 09:29:07.378" level="INFO">Clicking button '//button[contains(@type,'submit')]'.</msg>
+<status status="PASS" endtime="20190721 09:29:07.632" starttime="20190721 09:29:07.362"></status>
 </kw>
+<status status="PASS" endtime="20190721 09:29:07.632" starttime="20190721 09:28:57.750"></status>
+</kw>
+<kw name="Verify successful Login" library="Login">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>${name}</arg>
 </arguments>
-<status status="PASS" endtime="20190720 22:54:10.660" starttime="20190720 22:54:10.606"></status>
+<status status="PASS" endtime="20190721 09:29:10.515" starttime="20190721 09:29:07.632"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Hi, ${name}</arg>
 </arguments>
-<msg timestamp="20190720 22:54:10.971" level="INFO">Current page contains text 'Hi, Abhishek'.</msg>
-<status status="PASS" endtime="20190720 22:54:10.971" starttime="20190720 22:54:10.661"></status>
+<msg timestamp="20190721 09:29:10.533" level="INFO">Current page contains text 'Hi, Abhishek'.</msg>
+<status status="PASS" endtime="20190721 09:29:10.533" starttime="20190721 09:29:10.515"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:10.972" starttime="20190720 22:53:57.545"></status>
+<status status="PASS" endtime="20190721 09:29:10.533" starttime="20190721 09:29:07.632"></status>
 </kw>
+<doc>Login to Zerodha Successfully</doc>
+<tags>
+<tag>Login</tag>
+</tags>
+<status status="PASS" endtime="20190721 09:29:10.542" critical="yes" starttime="20190721 09:28:57.749"></status>
+</test>
+<test id="s1-t2" name="TC002 Click on Holdings and Validate the Scrips">
 <kw name="Click on Holdings" library="HoldingsScreenshot">
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>Holdings</arg>
 </arguments>
-<msg timestamp="20190720 22:54:10.976" level="INFO">Clicking link 'Holdings'.</msg>
-<status status="PASS" endtime="20190720 22:54:11.503" starttime="20190720 22:54:10.976"></status>
+<msg timestamp="20190721 09:29:10.548" level="INFO">Clicking link 'Holdings'.</msg>
+<status status="PASS" endtime="20190721 09:29:11.003" starttime="20190721 09:29:10.547"></status>
 </kw>
 <kw name="Set Screenshot Directory" library="SeleniumLibrary">
 <doc>Sets the directory for captured screenshots.</doc>
 <arguments>
 <arg>${holdings_dir}</arg>
 </arguments>
-<status status="PASS" endtime="20190720 22:54:11.503" starttime="20190720 22:54:11.503"></status>
+<status status="PASS" endtime="20190721 09:29:11.004" starttime="20190721 09:29:11.003"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
 <arguments>
 <arg>${holdings_dir}/holdings.png</arg>
 </arguments>
-<msg timestamp="20190720 22:54:11.669" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Holdings_Screenshot/Holdings_Screenshot/holdings.png"&gt;&lt;img src="../Holdings_Screenshot/Holdings_Screenshot/holdings.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190720 22:54:11.671" starttime="20190720 22:54:11.503"></status>
+<msg timestamp="20190721 09:29:11.190" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Holdings_Screenshot/Holdings_Screenshot/holdings.png"&gt;&lt;img src="../Holdings_Screenshot/Holdings_Screenshot/holdings.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190721 09:29:11.190" starttime="20190721 09:29:11.005"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190720 22:54:16.684" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190720 22:54:16.684" starttime="20190720 22:54:11.671"></status>
+<msg timestamp="20190721 09:29:16.191" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190721 09:29:16.192" starttime="20190721 09:29:11.190"></status>
 </kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<doc>Returns the text value of element identified by ``locator``.</doc>
-<arguments>
-<arg>//tr[1]/td[1]/span[1]</arg>
-</arguments>
-<assign>
-<var>${symbol}</var>
-</assign>
-<msg timestamp="20190720 22:54:16.755" level="INFO">${symbol} = AMARAJABAT</msg>
-<status status="PASS" endtime="20190720 22:54:16.755" starttime="20190720 22:54:16.684"></status>
+<status status="PASS" endtime="20190721 09:29:16.192" starttime="20190721 09:29:10.547"></status>
 </kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<doc>Returns the text value of element identified by ``locator``.</doc>
-<arguments>
-<arg>//tr[1]/td[2]</arg>
-</arguments>
-<assign>
-<var>${qty}</var>
-</assign>
-<msg timestamp="20190720 22:54:16.783" level="INFO">${qty} = 11</msg>
-<status status="PASS" endtime="20190720 22:54:16.784" starttime="20190720 22:54:16.756"></status>
-</kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<doc>Returns the text value of element identified by ``locator``.</doc>
-<arguments>
-<arg>//tr[1]/td[3]</arg>
-</arguments>
-<assign>
-<var>${avg}</var>
-</assign>
-<msg timestamp="20190720 22:54:16.808" level="INFO">${avg} = 651.31</msg>
-<status status="PASS" endtime="20190720 22:54:16.808" starttime="20190720 22:54:16.784"></status>
-</kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<doc>Returns the text value of element identified by ``locator``.</doc>
-<arguments>
-<arg>//tr[1]/td[4]</arg>
-</arguments>
-<assign>
-<var>${ltp}</var>
-</assign>
-<msg timestamp="20190720 22:54:16.832" level="INFO">${ltp} = 610.65</msg>
-<status status="PASS" endtime="20190720 22:54:16.832" starttime="20190720 22:54:16.808"></status>
-</kw>
-<status status="PASS" endtime="20190720 22:54:16.832" starttime="20190720 22:54:10.975"></status>
-</kw>
-<doc>This test case will login to Zerodha and save Holdings screenshot</doc>
-<tags>
-<tag>Login</tag>
-</tags>
-<status status="PASS" endtime="20190720 22:54:16.832" critical="yes" starttime="20190720 22:53:57.544"></status>
-</test>
-<test id="s1-t2" name="TC002 Validate the Scrips">
 <kw name="Validate the scrips" library="HoldingsScreenshot">
-<kw type="for" name="${i} IN RANGE [ 1 | 13 ]">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//div/section[1]/header[1]/h3[1]/span[2]</arg>
+</arguments>
+<assign>
+<var>${scrips_cnt}</var>
+</assign>
+<msg timestamp="20190721 09:29:16.237" level="INFO">${scrips_cnt} = (12)</msg>
+<status status="PASS" endtime="20190721 09:29:16.237" starttime="20190721 09:29:16.195"></status>
+</kw>
+<kw name="Remove String" library="String">
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<arguments>
+<arg>${scrips_cnt}</arg>
+<arg>(</arg>
+<arg>,</arg>
+<arg>)</arg>
+</arguments>
+<assign>
+<var>${scrips_cnt}</var>
+</assign>
+<msg timestamp="20190721 09:29:16.238" level="INFO">${scrips_cnt} = 12</msg>
+<status status="PASS" endtime="20190721 09:29:16.238" starttime="20190721 09:29:16.237"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${scrips_cnt}</arg>
+</arguments>
+<msg timestamp="20190721 09:29:16.238" level="INFO">12</msg>
+<status status="PASS" endtime="20190721 09:29:16.238" starttime="20190721 09:29:16.238"></status>
+</kw>
+<kw type="for" name="${i} IN RANGE [ 1 | ${scrips_cnt} + 1 ]">
 <kw type="foritem" name="${i} = 1">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -182,8 +174,8 @@
 <assign>
 <var>${symbol}</var>
 </assign>
-<msg timestamp="20190720 22:54:16.855" level="INFO">${symbol} = AMARAJABAT</msg>
-<status status="PASS" endtime="20190720 22:54:16.855" starttime="20190720 22:54:16.840"></status>
+<msg timestamp="20190721 09:29:16.254" level="INFO">${symbol} = AMARAJABAT</msg>
+<status status="PASS" endtime="20190721 09:29:16.254" starttime="20190721 09:29:16.239"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -193,8 +185,8 @@
 <assign>
 <var>${qty}</var>
 </assign>
-<msg timestamp="20190720 22:54:16.878" level="INFO">${qty} = 11</msg>
-<status status="PASS" endtime="20190720 22:54:16.878" starttime="20190720 22:54:16.855"></status>
+<msg timestamp="20190721 09:29:16.271" level="INFO">${qty} = 11</msg>
+<status status="PASS" endtime="20190721 09:29:16.271" starttime="20190721 09:29:16.254"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -204,8 +196,8 @@
 <assign>
 <var>${avg}</var>
 </assign>
-<msg timestamp="20190720 22:54:16.892" level="INFO">${avg} = 651.31</msg>
-<status status="PASS" endtime="20190720 22:54:16.892" starttime="20190720 22:54:16.879"></status>
+<msg timestamp="20190721 09:29:16.285" level="INFO">${avg} = 651.31</msg>
+<status status="PASS" endtime="20190721 09:29:16.285" starttime="20190721 09:29:16.272"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -215,10 +207,10 @@
 <assign>
 <var>${ltp}</var>
 </assign>
-<msg timestamp="20190720 22:54:16.907" level="INFO">${ltp} = 610.65</msg>
-<status status="PASS" endtime="20190720 22:54:16.907" starttime="20190720 22:54:16.892"></status>
+<msg timestamp="20190721 09:29:16.299" level="INFO">${ltp} = 610.65</msg>
+<status status="PASS" endtime="20190721 09:29:16.299" starttime="20190721 09:29:16.285"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:16.907" starttime="20190720 22:54:16.840"></status>
+<status status="PASS" endtime="20190721 09:29:16.299" starttime="20190721 09:29:16.238"></status>
 </kw>
 <kw type="foritem" name="${i} = 2">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -229,8 +221,8 @@
 <assign>
 <var>${symbol}</var>
 </assign>
-<msg timestamp="20190720 22:54:16.920" level="INFO">${symbol} = DABUR</msg>
-<status status="PASS" endtime="20190720 22:54:16.920" starttime="20190720 22:54:16.907"></status>
+<msg timestamp="20190721 09:29:16.316" level="INFO">${symbol} = DABUR</msg>
+<status status="PASS" endtime="20190721 09:29:16.316" starttime="20190721 09:29:16.299"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -240,8 +232,8 @@
 <assign>
 <var>${qty}</var>
 </assign>
-<msg timestamp="20190720 22:54:16.932" level="INFO">${qty} = 20</msg>
-<status status="PASS" endtime="20190720 22:54:16.932" starttime="20190720 22:54:16.920"></status>
+<msg timestamp="20190721 09:29:16.331" level="INFO">${qty} = 20</msg>
+<status status="PASS" endtime="20190721 09:29:16.331" starttime="20190721 09:29:16.316"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -251,8 +243,8 @@
 <assign>
 <var>${avg}</var>
 </assign>
-<msg timestamp="20190720 22:54:16.947" level="INFO">${avg} = 434.12</msg>
-<status status="PASS" endtime="20190720 22:54:16.947" starttime="20190720 22:54:16.932"></status>
+<msg timestamp="20190721 09:29:16.344" level="INFO">${avg} = 434.12</msg>
+<status status="PASS" endtime="20190721 09:29:16.344" starttime="20190721 09:29:16.331"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -262,10 +254,10 @@
 <assign>
 <var>${ltp}</var>
 </assign>
-<msg timestamp="20190720 22:54:16.960" level="INFO">${ltp} = 420.20</msg>
-<status status="PASS" endtime="20190720 22:54:16.960" starttime="20190720 22:54:16.947"></status>
+<msg timestamp="20190721 09:29:16.358" level="INFO">${ltp} = 420.20</msg>
+<status status="PASS" endtime="20190721 09:29:16.358" starttime="20190721 09:29:16.344"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:16.960" starttime="20190720 22:54:16.907"></status>
+<status status="PASS" endtime="20190721 09:29:16.358" starttime="20190721 09:29:16.299"></status>
 </kw>
 <kw type="foritem" name="${i} = 3">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -276,8 +268,8 @@
 <assign>
 <var>${symbol}</var>
 </assign>
-<msg timestamp="20190720 22:54:16.970" level="INFO">${symbol} = DMART</msg>
-<status status="PASS" endtime="20190720 22:54:16.970" starttime="20190720 22:54:16.960"></status>
+<msg timestamp="20190721 09:29:16.369" level="INFO">${symbol} = DMART</msg>
+<status status="PASS" endtime="20190721 09:29:16.369" starttime="20190721 09:29:16.359"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -287,8 +279,8 @@
 <assign>
 <var>${qty}</var>
 </assign>
-<msg timestamp="20190720 22:54:16.982" level="INFO">${qty} = 5</msg>
-<status status="PASS" endtime="20190720 22:54:16.982" starttime="20190720 22:54:16.970"></status>
+<msg timestamp="20190721 09:29:16.386" level="INFO">${qty} = 5</msg>
+<status status="PASS" endtime="20190721 09:29:16.386" starttime="20190721 09:29:16.369"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -298,8 +290,8 @@
 <assign>
 <var>${avg}</var>
 </assign>
-<msg timestamp="20190720 22:54:16.994" level="INFO">${avg} = 1,333.40</msg>
-<status status="PASS" endtime="20190720 22:54:16.994" starttime="20190720 22:54:16.982"></status>
+<msg timestamp="20190721 09:29:16.398" level="INFO">${avg} = 1,333.40</msg>
+<status status="PASS" endtime="20190721 09:29:16.398" starttime="20190721 09:29:16.386"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -309,10 +301,10 @@
 <assign>
 <var>${ltp}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.006" level="INFO">${ltp} = 1,402.05</msg>
-<status status="PASS" endtime="20190720 22:54:17.006" starttime="20190720 22:54:16.994"></status>
+<msg timestamp="20190721 09:29:16.411" level="INFO">${ltp} = 1,402.05</msg>
+<status status="PASS" endtime="20190721 09:29:16.411" starttime="20190721 09:29:16.398"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:17.006" starttime="20190720 22:54:16.960"></status>
+<status status="PASS" endtime="20190721 09:29:16.411" starttime="20190721 09:29:16.358"></status>
 </kw>
 <kw type="foritem" name="${i} = 4">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -323,8 +315,8 @@
 <assign>
 <var>${symbol}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.017" level="INFO">${symbol} = GODREJAGRO</msg>
-<status status="PASS" endtime="20190720 22:54:17.017" starttime="20190720 22:54:17.006"></status>
+<msg timestamp="20190721 09:29:16.422" level="INFO">${symbol} = GODREJAGRO</msg>
+<status status="PASS" endtime="20190721 09:29:16.422" starttime="20190721 09:29:16.411"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -334,8 +326,8 @@
 <assign>
 <var>${qty}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.032" level="INFO">${qty} = 8</msg>
-<status status="PASS" endtime="20190720 22:54:17.032" starttime="20190720 22:54:17.017"></status>
+<msg timestamp="20190721 09:29:16.435" level="INFO">${qty} = 8</msg>
+<status status="PASS" endtime="20190721 09:29:16.435" starttime="20190721 09:29:16.422"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -345,8 +337,8 @@
 <assign>
 <var>${avg}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.046" level="INFO">${avg} = 497.16</msg>
-<status status="PASS" endtime="20190720 22:54:17.046" starttime="20190720 22:54:17.033"></status>
+<msg timestamp="20190721 09:29:16.446" level="INFO">${avg} = 497.16</msg>
+<status status="PASS" endtime="20190721 09:29:16.446" starttime="20190721 09:29:16.435"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -356,10 +348,10 @@
 <assign>
 <var>${ltp}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.062" level="INFO">${ltp} = 486.55</msg>
-<status status="PASS" endtime="20190720 22:54:17.062" starttime="20190720 22:54:17.047"></status>
+<msg timestamp="20190721 09:29:16.459" level="INFO">${ltp} = 486.55</msg>
+<status status="PASS" endtime="20190721 09:29:16.459" starttime="20190721 09:29:16.447"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:17.062" starttime="20190720 22:54:17.006"></status>
+<status status="PASS" endtime="20190721 09:29:16.460" starttime="20190721 09:29:16.411"></status>
 </kw>
 <kw type="foritem" name="${i} = 5">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -370,8 +362,8 @@
 <assign>
 <var>${symbol}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.074" level="INFO">${symbol} = HAVELLS</msg>
-<status status="PASS" endtime="20190720 22:54:17.074" starttime="20190720 22:54:17.063"></status>
+<msg timestamp="20190721 09:29:16.470" level="INFO">${symbol} = HAVELLS</msg>
+<status status="PASS" endtime="20190721 09:29:16.470" starttime="20190721 09:29:16.460"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -381,8 +373,8 @@
 <assign>
 <var>${qty}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.088" level="INFO">${qty} = 2</msg>
-<status status="PASS" endtime="20190720 22:54:17.088" starttime="20190720 22:54:17.074"></status>
+<msg timestamp="20190721 09:29:16.483" level="INFO">${qty} = 2</msg>
+<status status="PASS" endtime="20190721 09:29:16.483" starttime="20190721 09:29:16.470"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -392,8 +384,8 @@
 <assign>
 <var>${avg}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.103" level="INFO">${avg} = 572.50</msg>
-<status status="PASS" endtime="20190720 22:54:17.103" starttime="20190720 22:54:17.089"></status>
+<msg timestamp="20190721 09:29:16.495" level="INFO">${avg} = 572.50</msg>
+<status status="PASS" endtime="20190721 09:29:16.495" starttime="20190721 09:29:16.483"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -403,10 +395,10 @@
 <assign>
 <var>${ltp}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.118" level="INFO">${ltp} = 717.05</msg>
-<status status="PASS" endtime="20190720 22:54:17.119" starttime="20190720 22:54:17.103"></status>
+<msg timestamp="20190721 09:29:16.510" level="INFO">${ltp} = 717.05</msg>
+<status status="PASS" endtime="20190721 09:29:16.510" starttime="20190721 09:29:16.495"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:17.119" starttime="20190720 22:54:17.062"></status>
+<status status="PASS" endtime="20190721 09:29:16.510" starttime="20190721 09:29:16.460"></status>
 </kw>
 <kw type="foritem" name="${i} = 6">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -417,8 +409,8 @@
 <assign>
 <var>${symbol}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.129" level="INFO">${symbol} = HEXAWARE</msg>
-<status status="PASS" endtime="20190720 22:54:17.129" starttime="20190720 22:54:17.119"></status>
+<msg timestamp="20190721 09:29:16.575" level="INFO">${symbol} = HEXAWARE</msg>
+<status status="PASS" endtime="20190721 09:29:16.575" starttime="20190721 09:29:16.510"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -428,8 +420,8 @@
 <assign>
 <var>${qty}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.141" level="INFO">${qty} = 2</msg>
-<status status="PASS" endtime="20190720 22:54:17.141" starttime="20190720 22:54:17.129"></status>
+<msg timestamp="20190721 09:29:16.606" level="INFO">${qty} = 2</msg>
+<status status="PASS" endtime="20190721 09:29:16.606" starttime="20190721 09:29:16.575"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -439,8 +431,8 @@
 <assign>
 <var>${avg}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.217" level="INFO">${avg} = 324.50</msg>
-<status status="PASS" endtime="20190720 22:54:17.217" starttime="20190720 22:54:17.141"></status>
+<msg timestamp="20190721 09:29:16.620" level="INFO">${avg} = 324.50</msg>
+<status status="PASS" endtime="20190721 09:29:16.620" starttime="20190721 09:29:16.606"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -450,10 +442,10 @@
 <assign>
 <var>${ltp}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.234" level="INFO">${ltp} = 354.85</msg>
-<status status="PASS" endtime="20190720 22:54:17.234" starttime="20190720 22:54:17.218"></status>
+<msg timestamp="20190721 09:29:16.634" level="INFO">${ltp} = 354.85</msg>
+<status status="PASS" endtime="20190721 09:29:16.634" starttime="20190721 09:29:16.620"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:17.234" starttime="20190720 22:54:17.119"></status>
+<status status="PASS" endtime="20190721 09:29:16.634" starttime="20190721 09:29:16.510"></status>
 </kw>
 <kw type="foritem" name="${i} = 7">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -464,8 +456,8 @@
 <assign>
 <var>${symbol}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.248" level="INFO">${symbol} = ITC</msg>
-<status status="PASS" endtime="20190720 22:54:17.248" starttime="20190720 22:54:17.234"></status>
+<msg timestamp="20190721 09:29:16.645" level="INFO">${symbol} = ITC</msg>
+<status status="PASS" endtime="20190721 09:29:16.645" starttime="20190721 09:29:16.634"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -475,8 +467,8 @@
 <assign>
 <var>${qty}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.265" level="INFO">${qty} = 21</msg>
-<status status="PASS" endtime="20190720 22:54:17.265" starttime="20190720 22:54:17.248"></status>
+<msg timestamp="20190721 09:29:16.659" level="INFO">${qty} = 21</msg>
+<status status="PASS" endtime="20190721 09:29:16.659" starttime="20190721 09:29:16.645"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -486,8 +478,8 @@
 <assign>
 <var>${avg}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.277" level="INFO">${avg} = 294.25</msg>
-<status status="PASS" endtime="20190720 22:54:17.277" starttime="20190720 22:54:17.265"></status>
+<msg timestamp="20190721 09:29:16.670" level="INFO">${avg} = 294.25</msg>
+<status status="PASS" endtime="20190721 09:29:16.670" starttime="20190721 09:29:16.659"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -497,10 +489,10 @@
 <assign>
 <var>${ltp}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.290" level="INFO">${ltp} = 268.30</msg>
-<status status="PASS" endtime="20190720 22:54:17.290" starttime="20190720 22:54:17.277"></status>
+<msg timestamp="20190721 09:29:16.685" level="INFO">${ltp} = 268.30</msg>
+<status status="PASS" endtime="20190721 09:29:16.685" starttime="20190721 09:29:16.670"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:17.290" starttime="20190720 22:54:17.234"></status>
+<status status="PASS" endtime="20190721 09:29:16.685" starttime="20190721 09:29:16.634"></status>
 </kw>
 <kw type="foritem" name="${i} = 8">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -511,8 +503,8 @@
 <assign>
 <var>${symbol}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.301" level="INFO">${symbol} = M&amp;M</msg>
-<status status="PASS" endtime="20190720 22:54:17.301" starttime="20190720 22:54:17.290"></status>
+<msg timestamp="20190721 09:29:16.695" level="INFO">${symbol} = M&amp;M</msg>
+<status status="PASS" endtime="20190721 09:29:16.696" starttime="20190721 09:29:16.685"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -522,8 +514,8 @@
 <assign>
 <var>${qty}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.318" level="INFO">${qty} = T1: 2 12</msg>
-<status status="PASS" endtime="20190720 22:54:17.318" starttime="20190720 22:54:17.301"></status>
+<msg timestamp="20190721 09:29:16.709" level="INFO">${qty} = T1: 2 12</msg>
+<status status="PASS" endtime="20190721 09:29:16.709" starttime="20190721 09:29:16.696"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -533,8 +525,8 @@
 <assign>
 <var>${avg}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.327" level="INFO">${avg} = 665.69</msg>
-<status status="PASS" endtime="20190720 22:54:17.327" starttime="20190720 22:54:17.318"></status>
+<msg timestamp="20190721 09:29:16.722" level="INFO">${avg} = 665.69</msg>
+<status status="PASS" endtime="20190721 09:29:16.722" starttime="20190721 09:29:16.709"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -544,10 +536,10 @@
 <assign>
 <var>${ltp}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.342" level="INFO">${ltp} = 571.30</msg>
-<status status="PASS" endtime="20190720 22:54:17.342" starttime="20190720 22:54:17.327"></status>
+<msg timestamp="20190721 09:29:16.737" level="INFO">${ltp} = 571.30</msg>
+<status status="PASS" endtime="20190721 09:29:16.737" starttime="20190721 09:29:16.722"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:17.342" starttime="20190720 22:54:17.290"></status>
+<status status="PASS" endtime="20190721 09:29:16.737" starttime="20190721 09:29:16.685"></status>
 </kw>
 <kw type="foritem" name="${i} = 9">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -558,8 +550,8 @@
 <assign>
 <var>${symbol}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.418" level="INFO">${symbol} = RBLBANK</msg>
-<status status="PASS" endtime="20190720 22:54:17.418" starttime="20190720 22:54:17.342"></status>
+<msg timestamp="20190721 09:29:16.747" level="INFO">${symbol} = RBLBANK</msg>
+<status status="PASS" endtime="20190721 09:29:16.747" starttime="20190721 09:29:16.737"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -569,8 +561,8 @@
 <assign>
 <var>${qty}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.431" level="INFO">${qty} = 10</msg>
-<status status="PASS" endtime="20190720 22:54:17.431" starttime="20190720 22:54:17.418"></status>
+<msg timestamp="20190721 09:29:16.760" level="INFO">${qty} = 10</msg>
+<status status="PASS" endtime="20190721 09:29:16.760" starttime="20190721 09:29:16.748"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -580,8 +572,8 @@
 <assign>
 <var>${avg}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.442" level="INFO">${avg} = 522.54</msg>
-<status status="PASS" endtime="20190720 22:54:17.442" starttime="20190720 22:54:17.431"></status>
+<msg timestamp="20190721 09:29:16.770" level="INFO">${avg} = 522.54</msg>
+<status status="PASS" endtime="20190721 09:29:16.770" starttime="20190721 09:29:16.760"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -591,10 +583,10 @@
 <assign>
 <var>${ltp}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.455" level="INFO">${ltp} = 500.40</msg>
-<status status="PASS" endtime="20190720 22:54:17.455" starttime="20190720 22:54:17.442"></status>
+<msg timestamp="20190721 09:29:16.782" level="INFO">${ltp} = 500.40</msg>
+<status status="PASS" endtime="20190721 09:29:16.782" starttime="20190721 09:29:16.770"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:17.455" starttime="20190720 22:54:17.342"></status>
+<status status="PASS" endtime="20190721 09:29:16.783" starttime="20190721 09:29:16.737"></status>
 </kw>
 <kw type="foritem" name="${i} = 10">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -605,8 +597,8 @@
 <assign>
 <var>${symbol}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.465" level="INFO">${symbol} = RELIANCE</msg>
-<status status="PASS" endtime="20190720 22:54:17.465" starttime="20190720 22:54:17.455"></status>
+<msg timestamp="20190721 09:29:16.794" level="INFO">${symbol} = RELIANCE</msg>
+<status status="PASS" endtime="20190721 09:29:16.794" starttime="20190721 09:29:16.783"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -616,8 +608,8 @@
 <assign>
 <var>${qty}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.477" level="INFO">${qty} = 5</msg>
-<status status="PASS" endtime="20190720 22:54:17.478" starttime="20190720 22:54:17.465"></status>
+<msg timestamp="20190721 09:29:16.806" level="INFO">${qty} = 5</msg>
+<status status="PASS" endtime="20190721 09:29:16.806" starttime="20190721 09:29:16.794"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -627,8 +619,8 @@
 <assign>
 <var>${avg}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.489" level="INFO">${avg} = 1,073.18</msg>
-<status status="PASS" endtime="20190720 22:54:17.489" starttime="20190720 22:54:17.478"></status>
+<msg timestamp="20190721 09:29:16.817" level="INFO">${avg} = 1,073.18</msg>
+<status status="PASS" endtime="20190721 09:29:16.817" starttime="20190721 09:29:16.806"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -638,10 +630,10 @@
 <assign>
 <var>${ltp}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.501" level="INFO">${ltp} = 1,249.00</msg>
-<status status="PASS" endtime="20190720 22:54:17.501" starttime="20190720 22:54:17.489"></status>
+<msg timestamp="20190721 09:29:16.830" level="INFO">${ltp} = 1,249.00</msg>
+<status status="PASS" endtime="20190721 09:29:16.830" starttime="20190721 09:29:16.817"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:17.501" starttime="20190720 22:54:17.455"></status>
+<status status="PASS" endtime="20190721 09:29:16.830" starttime="20190721 09:29:16.783"></status>
 </kw>
 <kw type="foritem" name="${i} = 11">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -652,8 +644,8 @@
 <assign>
 <var>${symbol}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.514" level="INFO">${symbol} = TITAN</msg>
-<status status="PASS" endtime="20190720 22:54:17.514" starttime="20190720 22:54:17.501"></status>
+<msg timestamp="20190721 09:29:16.840" level="INFO">${symbol} = TITAN</msg>
+<status status="PASS" endtime="20190721 09:29:16.840" starttime="20190721 09:29:16.830"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -663,8 +655,8 @@
 <assign>
 <var>${qty}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.527" level="INFO">${qty} = 4</msg>
-<status status="PASS" endtime="20190720 22:54:17.527" starttime="20190720 22:54:17.514"></status>
+<msg timestamp="20190721 09:29:16.852" level="INFO">${qty} = 4</msg>
+<status status="PASS" endtime="20190721 09:29:16.852" starttime="20190721 09:29:16.841"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -674,8 +666,8 @@
 <assign>
 <var>${avg}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.541" level="INFO">${avg} = 868.81</msg>
-<status status="PASS" endtime="20190720 22:54:17.541" starttime="20190720 22:54:17.527"></status>
+<msg timestamp="20190721 09:29:16.863" level="INFO">${avg} = 868.81</msg>
+<status status="PASS" endtime="20190721 09:29:16.863" starttime="20190721 09:29:16.853"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -685,10 +677,10 @@
 <assign>
 <var>${ltp}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.556" level="INFO">${ltp} = 1,091.05</msg>
-<status status="PASS" endtime="20190720 22:54:17.556" starttime="20190720 22:54:17.542"></status>
+<msg timestamp="20190721 09:29:16.875" level="INFO">${ltp} = 1,091.05</msg>
+<status status="PASS" endtime="20190721 09:29:16.876" starttime="20190721 09:29:16.863"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:17.556" starttime="20190720 22:54:17.501"></status>
+<status status="PASS" endtime="20190721 09:29:16.876" starttime="20190721 09:29:16.830"></status>
 </kw>
 <kw type="foritem" name="${i} = 12">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -699,8 +691,8 @@
 <assign>
 <var>${symbol}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.569" level="INFO">${symbol} = YESBANK</msg>
-<status status="PASS" endtime="20190720 22:54:17.569" starttime="20190720 22:54:17.556"></status>
+<msg timestamp="20190721 09:29:16.938" level="INFO">${symbol} = YESBANK</msg>
+<status status="PASS" endtime="20190721 09:29:16.938" starttime="20190721 09:29:16.876"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -710,8 +702,8 @@
 <assign>
 <var>${qty}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.583" level="INFO">${qty} = 54</msg>
-<status status="PASS" endtime="20190720 22:54:17.583" starttime="20190720 22:54:17.569"></status>
+<msg timestamp="20190721 09:29:16.952" level="INFO">${qty} = 54</msg>
+<status status="PASS" endtime="20190721 09:29:16.952" starttime="20190721 09:29:16.938"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -721,8 +713,8 @@
 <assign>
 <var>${avg}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.596" level="INFO">${avg} = 141.24</msg>
-<status status="PASS" endtime="20190720 22:54:17.596" starttime="20190720 22:54:17.583"></status>
+<msg timestamp="20190721 09:29:16.962" level="INFO">${avg} = 141.24</msg>
+<status status="PASS" endtime="20190721 09:29:16.962" starttime="20190721 09:29:16.952"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -732,36 +724,77 @@
 <assign>
 <var>${ltp}</var>
 </assign>
-<msg timestamp="20190720 22:54:17.610" level="INFO">${ltp} = 83.25</msg>
-<status status="PASS" endtime="20190720 22:54:17.610" starttime="20190720 22:54:17.596"></status>
+<msg timestamp="20190721 09:29:16.974" level="INFO">${ltp} = 83.25</msg>
+<status status="PASS" endtime="20190721 09:29:16.974" starttime="20190721 09:29:16.962"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:17.610" starttime="20190720 22:54:17.556"></status>
+<status status="PASS" endtime="20190721 09:29:16.975" starttime="20190721 09:29:16.876"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:17.610" starttime="20190720 22:54:16.840"></status>
+<status status="PASS" endtime="20190721 09:29:16.975" starttime="20190721 09:29:16.238"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:17.611" starttime="20190720 22:54:16.839"></status>
+<status status="PASS" endtime="20190721 09:29:16.975" starttime="20190721 09:29:16.194"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:17.611" critical="yes" starttime="20190720 22:54:16.837"></status>
+<status status="PASS" endtime="20190721 09:29:16.975" critical="yes" starttime="20190721 09:29:10.546"></status>
 </test>
-<test id="s1-t3" name="TC003 Close Browser">
+<test id="s1-t3" name="TC003 Click on Add button">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>//td[@class='instrument right-border']//span[contains(text(),'AMARAJABAT')]</arg>
+</arguments>
+<msg timestamp="20190721 09:29:16.978" level="INFO">Simulating Mouse Over on element '//td[@class='instrument right-border']//span[contains(text(),'AMARAJABAT')]'.</msg>
+<status status="PASS" endtime="20190721 09:29:17.270" starttime="20190721 09:29:16.978"></status>
+</kw>
+<kw name="wait for 2 secs" library="Common">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20190721 09:29:19.272" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190721 09:29:19.272" starttime="20190721 09:29:17.271"></status>
+</kw>
+<status status="PASS" endtime="20190721 09:29:19.273" starttime="20190721 09:29:17.271"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class='icon icon-ellipsis']</arg>
+</arguments>
+<msg timestamp="20190721 09:29:19.276" level="INFO">Clicking element '//span[@class='icon icon-ellipsis']'.</msg>
+<status status="PASS" endtime="20190721 09:29:19.531" starttime="20190721 09:29:19.275"></status>
+</kw>
+<kw name="wait for 10 secs" library="Common">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190721 09:29:29.538" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190721 09:29:29.538" starttime="20190721 09:29:19.533"></status>
+</kw>
+<status status="PASS" endtime="20190721 09:29:29.538" starttime="20190721 09:29:19.532"></status>
+</kw>
+<status status="PASS" endtime="20190721 09:29:29.538" critical="yes" starttime="20190721 09:29:16.977"></status>
+</test>
+<test id="s1-t4" name="TC004 Close Browser">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190720 22:54:21.773" starttime="20190720 22:54:17.614"></status>
+<status status="PASS" endtime="20190721 09:29:33.339" starttime="20190721 09:29:29.551"></status>
 </kw>
-<status status="PASS" endtime="20190720 22:54:21.774" critical="yes" starttime="20190720 22:54:17.614"></status>
+<status status="PASS" endtime="20190721 09:29:33.340" critical="yes" starttime="20190721 09:29:29.548"></status>
 </test>
-<status status="PASS" endtime="20190720 22:54:21.779" starttime="20190720 22:53:56.704"></status>
+<status status="PASS" endtime="20190721 09:29:33.342" starttime="20190721 09:28:56.864"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="3">Critical Tests</stat>
-<stat fail="0" pass="3">All Tests</stat>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
 </total>
 <tag>
 <stat fail="0" pass="1">Login</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="HoldingsScreenshot" pass="3">HoldingsScreenshot</stat>
+<stat fail="0" id="s1" name="BuyOrder" pass="4">BuyOrder</stat>
 </suite>
 </statistics>
 <errors>
